@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaviHome</title>
+  <link rel="stylesheet" href="SaviHome.css">
+  <link rel="icon" href="img/icon-13.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="img/Inicio/MiniLogo.png" alt="">
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-box">
+      <button class="search-button"><i class="fas fa-search"></i></button>
+      <button class="login-cart-button">
+        <i class="fas fa-user"></i> Ingresar/Registrarse
+      </button>
+      <button class="cart-button">
+        <i class="fas fa-shopping-cart"></i> $ 0.00
+      </button>
+    </div>
+  </header>
+  <nav>
+    <div class="menu-toggle">☰</div>
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn">Inicio</button>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Sobre Nosotros</button>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Nuestros Productos</button>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Blog</button>
+  </div>
+  <main>
+    <div id="entrada1">
+    </div>
+    <div id="text">
+      <div class="button-container">
+      </div>
+      <h1>¡Bienvenido a SaviHome!</h1>
+      <p>
+        Descubre la combinación perfecta de diseño, funcionalidad y calidad. ¡Haz de tu casa un hogar inolvidable!
+      </p>
+    </div>
+    <div id="entrada2"></div>
+    <div id="text2">
+      <h1>Productos más vendidos</h1>
+      <p>
+        Tenemos las piezas que necesitas para renovar cada espacio de tu casa.
+      </p>
+    </div>
+    <div class="logo1"></div>
+    <div class="logo2"></div>
+    <div class="logo3"></div>
+    <div class="logo4"></div>
+
+    <div id="colecciones">
+      <p>Línea Toallas Essencial<br><br>
+        A partir de S/5.50</p>
+      <p>Canasta Cedro<br><br>
+        S/49.90</p>
+      <p>Set de cubiertos<br><br>
+        S/20.90</p>
+      <p>Individual Saona<br><br>
+        S/9.50</p>
+    </div>
+  </main>
+  <div class="footer-image">
+    <img src="img/Inicio/Icono-04.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="feature">
+      <img src="img/Inicio/Icono-05.png" alt="Entrega">
+    </div>
+    <div class="feature">
+      <img src="img/Inicio/Icono-06.png" alt="Envíos">
+    </div>
+    <div class="feature">
+      <img src="img/Inicio/Icono-07.png" alt="Compra Segura">
+    </div>
+    <div class="feature">
+      <img src="img/Inicio/Icono-08.png" alt="Pagos">
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <img src="img/Inicio/MiniLogo.png" alt="SaviHome Logo" class="footer-logo" />
+        <p class="footer-tagline">Decora con los mejores elementos</p>
+        <div class="social-icons">
+          <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-address"></div>
+      </div>
+      <div class="footer-links">
+        <h3>Enlaces rápidos</h3>
+        <a href="./index.html">Inicio</a>
+        <a href="./acerca.html">Acerca de</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contacto.html">Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <p>+51 999 999 999</p>
+        <p>ventas@brimisa.com</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>

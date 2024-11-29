@@ -1,0 +1,455 @@
+body {
+    background-color: #fffefc;
+}
+
+header {
+    width: 100;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+header img {
+    height: 80px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    /* Asegura que los elementos del contenedor de búsqueda también estén centrados */
+    margin-left: 20px;
+    /* Separación entre el logo y la barra de búsqueda */
+}
+
+.search-box {
+    width: 500px;
+    height: 50px;
+    /* Ajusta la altura del cuadro de búsqueda */
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    /* Bordes redondeados solo en la izquierda */
+}
+
+.search-button {
+    height: 50px;
+    /* Asegúrate de que tenga la misma altura que el cuadro de búsqueda */
+    width: 50px;
+    /* Ajusta el ancho del botón de búsqueda */
+    padding: 0 10px;
+    background-color: #92AD84;
+    /* Cambia al color que desees */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    /* Bordes redondeados solo en la derecha */
+    cursor: pointer;
+    margin-right: 1200px;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+
+.login-cart-button,
+.cart-button {
+    margin-left: 20px;
+    /* Espacio entre los botones */
+    height: 45px;
+    background-color: #92AD84;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-cart-button i,
+.cart-button i {
+    margin-right: 5px;
+    /* Espacio entre el ícono y el texto */
+}
+
+/* Ajustes para que los elementos sean responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .login-cart-button,
+    .cart-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: #eae1d367;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+nav a {
+    color: #92AD84;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px;
+    display: block;
+    text-decoration: none;
+    right: 60px;
+}
+
+nav a:hover {
+    height: 20px;
+    padding: 40px;
+    color: #7f9674;
+    background-color: #eae1d3;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 350px 350px;
+}
+
+#entrada1 {
+    width: 98%;
+    height: 100px;
+    background-image: url(img/dormi-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 195px 5px 0 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#entrada1 img {
+    width: 100%;
+}
+
+#text {
+    width: 85%;
+    height: 100px;
+    padding: 90px 0 0 80px;
+    color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#text h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 1px rgb(194, 184, 184);
+}
+
+#blog1 {
+    width: 80%;
+    height: 250px;
+    background-image: url(img/Img-02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    place-items: center;
+}
+
+#blog1 img {
+    width: 150px;
+    height: 150px;
+
+}
+
+#text1 {
+    width: 90%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 5px 0 20px;
+    color: rgb(0, 0, 0);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#text1 h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: #7f9674;
+}
+
+#text1 p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+
+}
+
+#blog2 {
+    width: 93%;
+    height: 500px;
+    background-image: url(img/misi_Mesa\ de\ trabajo\ 1.png);
+    background-size: contain;
+    background-color: #eae1d3;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 195px 50px 0 20px;
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#blog2 img {
+    width: 120px;
+    height: 120px;
+}
+
+#text2 {
+    width: 90%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 5px 0 50px;
+    color: rgb(0, 0, 0);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#text2 h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: #7f9674;
+    text-align: center;
+}
+
+#text2 p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
+
+#blog3 {
+    width: 95%;
+    height: 500px;
+    background-image: url(img/visi_Mesa\ de\ trabajo\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 195px 50px 0 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #eae1d3;
+}
+
+#blog3 img {
+    width: 150px;
+    height: 150px;
+}
+
+#text3 {
+    width: 90%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 5px 0 50px;
+    color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#text3 h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: #7f9674;
+    text-align: center;
+}
+
+#text3 p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
+
+footer {
+    background-color: #92AD84;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #eae1d3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-address {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-address p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+/* styles.css */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    width: 800px;
+    /* Ajusta el tamaño según sea necesario */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3,
+.card p {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    /* Color del texto */
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.card h3 {
+    top: 20px;
+    /* Ajusta la posición del título */
+    font-size: 24px;
+    /* Ajusta el tamaño del título */
+}
+
+.card p {
+    bottom: 20px;
+    /* Ajusta la posición del párrafo */
+    font-size: 16px;
+    /* Ajusta el tamaño del párrafo */
+}

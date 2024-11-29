@@ -1,0 +1,542 @@
+body {
+  background-color: #fffefc;
+}
+
+.dropcontainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #92AD84;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #92AD84;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #516249;
+}
+
+header {
+  width: 30;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+header img {
+  height: 70px;
+  margin-right: 100px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  /* Asegura que los elementos del contenedor de búsqueda también estén centrados */
+  margin-left: 20px;
+  /* Separación entre el logo y la barra de búsqueda */
+}
+
+.search-box {
+  width: 500px;
+  height: 50px;
+  /* Ajusta la altura del cuadro de búsqueda */
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  /* Bordes redondeados solo en la izquierda */
+}
+
+.search-button {
+  height: 50px;
+  /* Asegúrate de que tenga la misma altura que el cuadro de búsqueda */
+  width: 50px;
+  /* Ajusta el ancho del botón de búsqueda */
+  padding: 0 10px;
+  background-color: #92AD84;
+  /* Cambia al color que desees */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  /* Bordes redondeados solo en la derecha */
+  cursor: pointer;
+  margin-right: 1200px;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
+
+.login-cart-button,
+.cart-button {
+  margin-left: 20px;
+  /* Espacio entre los botones */
+  height: 45px;
+  background-color: #92AD84;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-cart-button i,
+.cart-button i {
+  margin-right: 5px;
+  /* Espacio entre el ícono y el texto */
+}
+
+/* Ajustes para que los elementos sean responsivos */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    /* Cambia a columna en pantallas pequeñas */
+    align-items: flex-start;
+  }
+
+  .search-container {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .login-cart-button,
+  .cart-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  background-color: #eae1d367;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #92AD84;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 40px;
+  display: block;
+  text-decoration: none;
+  right: 60px;
+}
+
+nav a:hover {
+  height: 20px;
+  padding: 40px;
+  color: #7f9674;
+  background-color: #eae1d3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 80px 80px 180px 430px 250px;
+}
+
+#entrada1 {
+  width: 98%;
+  height: 300px;
+  background-image: url(img/Caminos\ de\ mesa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 195px 5px 0 20px;
+  color: white;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#entrada1 img {
+  width: 100%;
+}
+
+#text {
+  animation: fadeIn 2s ease-in-out;
+  width: 85%;
+  height: 235px;
+  background-color: #92AD84;
+  padding: 260px 80px 0 80px;
+  color: rgb(0, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+#text h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+#text p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+#entrada2 {
+  width: 98%;
+  padding: 195px 5px 0 20px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#entrada2 img {
+  width: 100%;
+}
+
+#text2 {
+  width: 85%;
+  height: 235px;
+  padding: 130px;
+  color: rgb(0, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#text2 h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  color: #92AD84;
+}
+
+#text2 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  line-height: 20px;
+  color: #2a2b2a;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 {
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/toall.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.logo2 {
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/decoracion);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.logo3 {
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/cocina);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.logo4 {
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/manteleria);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+}
+
+/* Ajuste para el contenedor de textos */
+#colecciones {
+  width: 100%;
+  padding: 0 0;
+  /* Simplificado el padding */
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  display: flex;
+  justify-content: space-around;
+  /* Cambiado a space-around para mejor distribución */
+  align-items: center;
+  gap: 20px;
+}
+
+#colecciones p {
+  padding: 0;
+  /* Eliminado el padding */
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  /* Centrado el texto */
+  line-height: 20px;
+  color: #2a2b2a;
+  width: 250px;
+  /* Mismo ancho que los logos */
+}
+
+footer {
+  background-color: #92AD84;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  margin: 0;
+  color: white;
+}
+
+.footer-image {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #eae1d3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-address {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff5e1;
+}
+
+.feature {
+  text-align: center;
+  padding: 10px;
+}
+
+.feature img {
+  width: 300px;
+  height: 200px;
+}
+
+.feature p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
